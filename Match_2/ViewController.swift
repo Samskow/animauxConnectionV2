@@ -333,7 +333,7 @@ class ViewController: UIViewController {
         }
     }
     //-------------------
-    func reFlip() {
+    @objc func reFlip() {
         for index in 0..<arrayOfShowingBacks.count {
             flipCard(from: arrayOfShowingBacks[index], to: arrayOfHidingFronts[index])
         }

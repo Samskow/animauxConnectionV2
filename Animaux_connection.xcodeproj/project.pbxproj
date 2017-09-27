@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E455B181F7C3A5A004A7B29 /* menuicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E455B171F7C3A5A004A7B29 /* menuicon.png */; };
+		7E455B1A1F7C4388004A7B29 /* regledujeu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E455B191F7C4387004A7B29 /* regledujeu.png */; };
+		7E455B1C1F7C448F004A7B29 /* aide.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E455B1B1F7C448E004A7B29 /* aide.png */; };
+		7E455B1E1F7C455F004A7B29 /* recommencer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E455B1D1F7C455F004A7B29 /* recommencer.png */; };
+		7E455B201F7C463B004A7B29 /* fleche.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E455B1F1F7C463A004A7B29 /* fleche.png */; };
 		7E85E1251F749BD1005F9DB2 /* bull.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85E1181F749BCE005F9DB2 /* bull.png */; };
 		7E85E1261F749BD1005F9DB2 /* chick.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85E1191F749BCF005F9DB2 /* chick.png */; };
 		7E85E1271F749BD1005F9DB2 /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85E11A1F749BCF005F9DB2 /* pig.png */; };
@@ -66,6 +71,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E455B171F7C3A5A004A7B29 /* menuicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuicon.png; path = images/menuicon.png; sourceTree = "<group>"; };
+		7E455B191F7C4387004A7B29 /* regledujeu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = regledujeu.png; path = images/regledujeu.png; sourceTree = "<group>"; };
+		7E455B1B1F7C448E004A7B29 /* aide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide.png; path = images/aide.png; sourceTree = "<group>"; };
+		7E455B1D1F7C455F004A7B29 /* recommencer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recommencer.png; path = images/recommencer.png; sourceTree = "<group>"; };
+		7E455B1F1F7C463A004A7B29 /* fleche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fleche.png; path = images/fleche.png; sourceTree = "<group>"; };
 		7E85E1181F749BCE005F9DB2 /* bull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bull.png; path = images/bull.png; sourceTree = "<group>"; };
 		7E85E1191F749BCF005F9DB2 /* chick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chick.png; path = images/chick.png; sourceTree = "<group>"; };
 		7E85E11A1F749BCF005F9DB2 /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pig.png; path = images/pig.png; sourceTree = "<group>"; };
@@ -209,6 +219,11 @@
 		9B01626C1F72E2CA005912CE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7E455B1F1F7C463A004A7B29 /* fleche.png */,
+				7E455B1D1F7C455F004A7B29 /* recommencer.png */,
+				7E455B1B1F7C448E004A7B29 /* aide.png */,
+				7E455B191F7C4387004A7B29 /* regledujeu.png */,
+				7E455B171F7C3A5A004A7B29 /* menuicon.png */,
 				7EA9DC2E1F7B56FA00247A0E /* bravo.png */,
 				7EA9DC2A1F7B289A00247A0E /* jouer.png */,
 				7EA9DC281F7B240700247A0E /* confetti.gif */,
@@ -260,11 +275,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = eleves;
 				TargetAttributes = {
 					9B0162561F72E0FE005912CE = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -292,12 +308,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E455B201F7C463B004A7B29 /* fleche.png in Resources */,
 				7EF7D61A1F7843F100AE550D /* Icon-57.png in Resources */,
 				7EF7D6171F7843F100AE550D /* Icon-40.png in Resources */,
 				9B0162721F72E309005912CE /* penguin.png in Resources */,
 				7EF7D6131F7843F100AE550D /* Icon-120.png in Resources */,
 				7EF7D61D1F7843F100AE550D /* Icon-32.png in Resources */,
 				9B0162651F72E0FF005912CE /* LaunchScreen.storyboard in Resources */,
+				7E455B1C1F7C448F004A7B29 /* aide.png in Resources */,
 				7E85E12A1F749BD1005F9DB2 /* fox.png in Resources */,
 				7EF7D6161F7843F100AE550D /* Icon-58.png in Resources */,
 				7E85E1281F749BD1005F9DB2 /* tiger.png in Resources */,
@@ -317,6 +335,8 @@
 				7EF7D61C1F7843F100AE550D /* Icon-76.png in Resources */,
 				7E85E13D1F74BF60005F9DB2 /* retry.png in Resources */,
 				7EF7D6141F7843F100AE550D /* Icon-80.png in Resources */,
+				7E455B1A1F7C4388004A7B29 /* regledujeu.png in Resources */,
+				7E455B1E1F7C455F004A7B29 /* recommencer.png in Resources */,
 				7E85E12B1F749BD1005F9DB2 /* star.png in Resources */,
 				7EF7D60B1F7843F100AE550D /* Icon-100.png in Resources */,
 				7EF7D60E1F7843F100AE550D /* Icon-144.png in Resources */,
@@ -339,6 +359,7 @@
 				7E85E1261F749BD1005F9DB2 /* chick.png in Resources */,
 				7EF7D6181F7843F100AE550D /* Icon-72.png in Resources */,
 				7E85E1301F749BD1005F9DB2 /* zebra.png in Resources */,
+				7E455B181F7C3A5A004A7B29 /* menuicon.png in Resources */,
 				9B0162601F72E0FF005912CE /* Main.storyboard in Resources */,
 				7EF7D60D1F7843F100AE550D /* Icon-180.png in Resources */,
 				7EF7D6121F7843F100AE550D /* Icon-1024.png in Resources */,
@@ -392,7 +413,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -400,7 +423,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -442,7 +469,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -450,7 +479,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -484,7 +517,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnimauxConnection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -496,7 +530,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnimauxConnection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

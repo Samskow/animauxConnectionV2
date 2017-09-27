@@ -13,6 +13,139 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="ymR-kP-3xr">
+            <objects>
+                <viewController id="DUW-PQ-4Qt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ExC-b6-1D0"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNb-H8-l20"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ncG-2w-lXN">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aOi-Zu-dj6">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aOi-Zu-dj6" secondAttribute="height" multiplier="3:4" id="UFw-kD-os0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wD-Bp-zwy">
+                                <rect key="frame" x="134" y="412" width="500" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="aide.png">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="JOUER:" destination="apx-a4-F03" eventType="touchUpInside" id="31N-c1-g8E"/>
+                                    <action selector="menu:" destination="apx-a4-F03" eventType="touchUpInside" id="X6e-8v-xKL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lg-ok-Nat">
+                                <rect key="frame" x="134" y="647" width="500" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="recommencer.png">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="JOUER:" destination="apx-a4-F03" eventType="touchUpInside" id="fRm-nG-Q1P"/>
+                                    <action selector="menu:" destination="apx-a4-F03" eventType="touchUpInside" id="gxe-M1-X6s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIJ-nV-jtz">
+                                <rect key="frame" x="134" y="141" width="500" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="regledujeu.png">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="JOUER:" destination="apx-a4-F03" eventType="touchUpInside" id="0tt-NM-Y9g"/>
+                                    <action selector="menu:" destination="apx-a4-F03" eventType="touchUpInside" id="IM6-5d-Ran"/>
+                                    <segue destination="kca-7U-S8y" kind="presentation" id="Aba-VX-uES"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ut-rP-CGS">
+                                <rect key="frame" x="20" y="28" width="90" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="fleche.png">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="JOUER:" destination="apx-a4-F03" eventType="touchUpInside" id="6Fu-E1-Vrw"/>
+                                    <action selector="menu:" destination="apx-a4-F03" eventType="touchUpInside" id="ZRQ-l5-h8u"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Kid-yF-Ow4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QNb-H8-l20" firstAttribute="top" secondItem="aOi-Zu-dj6" secondAttribute="bottom" id="66M-DC-OqB"/>
+                            <constraint firstItem="aOi-Zu-dj6" firstAttribute="height" secondItem="ncG-2w-lXN" secondAttribute="height" id="PXA-n3-gnW"/>
+                            <constraint firstItem="aOi-Zu-dj6" firstAttribute="leading" secondItem="ncG-2w-lXN" secondAttribute="leading" id="bYK-dh-aj5"/>
+                            <constraint firstItem="aOi-Zu-dj6" firstAttribute="top" secondItem="ncG-2w-lXN" secondAttribute="top" id="c0M-F1-Ygq"/>
+                            <constraint firstItem="aOi-Zu-dj6" firstAttribute="width" secondItem="ncG-2w-lXN" secondAttribute="width" id="pVL-ci-vZg"/>
+                            <constraint firstAttribute="trailing" secondItem="aOi-Zu-dj6" secondAttribute="trailing" id="x87-X0-jHH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxV-LP-iIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="-1026.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c9c-j4-Xd1">
+            <objects>
+                <viewController id="kca-7U-S8y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YjM-JS-xoU"/>
+                        <viewControllerLayoutGuide type="bottom" id="hyL-BB-koE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W1b-vW-SzC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper2.png" translatesAutoresizingMaskIntoConstraints="NO" id="cBE-E8-Iec">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="dDP-5d-eva">
+                                <rect key="frame" x="238" y="132" width="293" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Toutes les cartes sont étalées faces cachées. Si il les deux cartes ne vont pas ensemble  les cartes se retournent" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6dT-Nz-Thj">
+                                <rect key="frame" x="179" y="415" width="411" height="347"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-Gm-e6P">
+                                <rect key="frame" x="20" y="28" width="90" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="fleche.png">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="JOUER:" destination="apx-a4-F03" eventType="touchUpInside" id="eic-nY-cVt"/>
+                                    <action selector="menu:" destination="apx-a4-F03" eventType="touchUpInside" id="3r4-7l-NO0"/>
+                                    <segue destination="DUW-PQ-4Qt" kind="presentation" id="YR4-bO-L1u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cBE-E8-Iec" firstAttribute="leading" secondItem="W1b-vW-SzC" secondAttribute="leading" id="BYT-Bw-xcZ"/>
+                            <constraint firstItem="cBE-E8-Iec" firstAttribute="height" secondItem="W1b-vW-SzC" secondAttribute="height" id="N7Q-tl-GGW"/>
+                            <constraint firstItem="cBE-E8-Iec" firstAttribute="width" secondItem="W1b-vW-SzC" secondAttribute="width" id="hJp-cP-P3Y"/>
+                            <constraint firstItem="hyL-BB-koE" firstAttribute="top" secondItem="cBE-E8-Iec" secondAttribute="bottom" id="i3X-gT-6ml"/>
+                            <constraint firstAttribute="trailing" secondItem="cBE-E8-Iec" secondAttribute="trailing" id="ken-Bi-7lS"/>
+                            <constraint firstItem="cBE-E8-Iec" firstAttribute="top" secondItem="W1b-vW-SzC" secondAttribute="top" id="lvY-N0-2FC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQf-fp-hNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417.96875" y="-1027.1484375"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Match_2" customModuleProvider="target" sceneMemberID="viewController">
@@ -1184,6 +1317,14 @@
                                 <rect key="frame" x="134" y="450" width="634" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhI-fT-H1j" userLabel="MENU">
+                                <rect key="frame" x="0.0" y="142" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="menuicon.png"/>
+                                <connections>
+                                    <segue destination="DUW-PQ-4Qt" kind="show" id="IES-Pg-h90"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1407,7 +1548,7 @@
                                 <rect key="frame" x="134" y="412" width="500" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="5dM-wz-mSf"/>
-                                    <constraint firstAttribute="width" constant="500" id="ct7-0j-dWN"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="ct7-0j-dWN"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="jouer.png">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1448,13 +1589,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Icon-1024.png" width="1024" height="1024"/>
+        <image name="aide.png" width="486" height="265"/>
         <image name="bravo.png" width="840" height="228"/>
+        <image name="fleche.png" width="486" height="265"/>
         <image name="frontwood.png" width="768" height="768"/>
         <image name="jouer.png" width="962" height="501"/>
         <image name="logo.png" width="745" height="279"/>
+        <image name="menuicon.png" width="566" height="514"/>
         <image name="panda.png" width="300" height="300"/>
         <image name="penguin.png" width="300" height="300"/>
+        <image name="recommencer.png" width="486" height="265"/>
+        <image name="regledujeu.png" width="486" height="265"/>
         <image name="retry.png" width="298" height="253"/>
         <image name="wallpaper2.png" width="768" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Aba-VX-uES"/>
+        <segue reference="Kid-yF-Ow4"/>
+        <segue reference="YR4-bO-L1u"/>
+    </inferredMetricsTieBreakers>
 </document>
