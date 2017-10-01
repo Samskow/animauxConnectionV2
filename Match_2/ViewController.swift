@@ -4,7 +4,7 @@ import AVFoundation
 import AudioToolbox
 //==========================
 class ViewController: UIViewController {
-    
+    //==========================
     @IBOutlet weak var back_1: UIView!
     @IBOutlet weak var front_1: UIView!
     @IBOutlet weak var back_2: UIView!
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var back_20: UIView!
     @IBOutlet weak var front_20: UIView!
 
-    
+    //==========================
     
     @IBOutlet weak var imgView1: UIImageView!
     @IBOutlet weak var imgView2: UIImageView!
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgView19: UIImageView!
     @IBOutlet weak var imgView20: UIImageView!
     
-    
+    //==========================
     
     
     @IBOutlet weak var card_1: UIView!
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var card_19: UIView!
     @IBOutlet weak var card_20: UIView!
     
-   
+   //==========================
     
     
     var arrayOfImageViews: [UIImageView]!
@@ -108,27 +108,23 @@ class ViewController: UIViewController {
     
     var cards: [UIView]!
     var compteurDeCache = 0
-    // ANIMATION DE BRAVO
+    // ANIMATION DE BRAVO!
     @IBOutlet weak var gagne: UIImageView!
     //-------------------
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gagne.alpha = 0 // OPACITE DE GAGNE EST DE 0 AU DEBUT
         
-       
-        
-        
-        gagne.alpha = 0
         cards = [card_1, card_2, card_3, card_4,card_5,card_6,card_7,
                  card_8,card_9,card_10,card_11,card_12,card_13,card_14,
                  card_15,card_16,card_17,card_18,card_19,card_20]
         
         arrayOfImageViews = [imgView1, imgView2, imgView3, imgView4,imgView5,imgView6,imgView7,imgView8,imgView9,imgView10,imgView11,imgView12,imgView13,imgView14,imgView15,imgView16,imgView17,imgView18,imgView19,imgView20,]
         
-        
-        randomAnimals()
-        setImagesToCards()
+        randomAnimals()//MELANGE DES CARTES
+        setImagesToCards()//AFFECTATION DE L'IMAGE A LA CARTE
         
     }
     //-------------------
@@ -245,7 +241,7 @@ class ViewController: UIViewController {
         arrayChosenCards.append(arrayOfRandomAnimalNames[sender.tag])
         verification()
     }
-    //-------------------
+    //==========================
     func flipCard(from: UIView, to: UIView) {
         let transitionOptions: UIViewAnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
         
@@ -257,7 +253,7 @@ class ViewController: UIViewController {
             to.isHidden = false
         })
     }
-    //-------------------
+    //==========================
     func setImagesToCards() {
         var number = 0
         for imgView in arrayOfImageViews {
@@ -265,7 +261,7 @@ class ViewController: UIViewController {
             number = number + 1
         }
     }
-    //-------------------
+    //==========================
     func randomAnimals() {
         let numberOfAnimals = arrayOfAnimalNames.count
         for _ in 1...numberOfAnimals {
@@ -274,7 +270,7 @@ class ViewController: UIViewController {
             arrayOfAnimalNames.remove(at: randomNumber)
         }
     }
-    //-------------------
+    //==========================
     func resetCards() {
         if arrayOfShowingBacks.count == 2 {
             Timer.scheduledTimer(timeInterval: 2,
@@ -284,7 +280,7 @@ class ViewController: UIViewController {
                                  repeats: false)
         }
     }
-    //-------------------
+    //==========================
     func verification() {
         if arrayChosenCards.count == 2 {
             if arrayChosenCards[0] == arrayChosenCards[1] {
@@ -294,14 +290,10 @@ class ViewController: UIViewController {
                                      selector: (#selector(hideCards)),
                                      userInfo: nil,
                                      repeats: false)
-                //SON
+                
+                //======SON QUAND IL Y A DEUX CARTE DU MÊME NOM==========
                 AudioServicesPlaySystemSound(SystemSoundID(1031))
-                //
-                
-                
-                
-               
-                
+                //==========================
                 
             } else {
                 arrayOfCards = []
@@ -312,7 +304,7 @@ class ViewController: UIViewController {
         
         
     }
-    //-------------------
+    //==========================
     @objc func hideCards() {
         arrayOfCards[0].isHidden = true
         arrayOfCards[1].isHidden = true
@@ -320,32 +312,41 @@ class ViewController: UIViewController {
         compteurDeCache = compteurDeCache + 2
         // NOMBRE DE CARTE HIDDEN
         if compteurDeCache == 20 {
-            print("plus de carte")
-            //OPACITE
-            gagne.alpha = 1
+            
+            gagne.alpha = 1 //OPACITE
+            
+            //====== SON QUAND IL Y A PLUS DE CARTE ==========
             AudioServicesPlaySystemSound(SystemSoundID(1010))
-            // ANIMATION
+            
+            //================== ANIMATION ================
             gagne.transform = CGAffineTransform(scaleX: 0, y: 0)
-            UIView.animate(withDuration: 1.5, delay: 0.5, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+            UIView.animate(withDuration: 1.5,
+                           delay: 0.5,
+                           usingSpringWithDamping: 0.3,
+                           initialSpringVelocity: 0,
+                           options: .curveEaseInOut,
+                           animations: {
                 self.gagne.transform = .identity
             }, completion: nil)
-            //
+            //==============================================
+            
         }
     }
-    //-------------------
-    @objc func reFlip() {
+    //==================
+    @objc func reFlip() { 
         for index in 0..<arrayOfShowingBacks.count {
             flipCard(from: arrayOfShowingBacks[index], to: arrayOfHidingFronts[index])
         }
         arrayOfShowingBacks = []
         arrayOfHidingFronts = []
     }
-    //-------------------
+    //==================
     @IBAction func reset(_ sender: UIButton) {
         for card in cards {
             card.isHidden =  false
         }
-        gagne.alpha = 0
+        gagne.alpha = 0 // POUR CACHER "BRAVO!" QUAND ON VEUT RECOMMENCER LE JEU QU'ON A GAGNÉ
+        
         arrayOfAnimalNames = ["lemur.png", "bull.png", "chick.png", "fox.png","hedgehog.png","hippopotamus.png","koala.png","pig.png","tiger.png","zebra.png","lemur.png", "bull.png", "chick.png", "fox.png","hedgehog.png","hippopotamus.png","koala.png","pig.png","tiger.png","zebra.png",]
         arrayOfRandomAnimalNames = []
         randomAnimals()
